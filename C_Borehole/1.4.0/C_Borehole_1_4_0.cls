@@ -215,7 +215,7 @@ End Function
 ' Разделяет слой грунта на указанной глубине на 2шт
 ' Если указанная глубина совпадает с границей слоя в
 ' Пределах tolerance - ничего не делает
-Public Sub splitAtDepth(depth As Double, Optional tolerance As Double = 0.01)
+Public Sub splitAtDepth(depth As Double, Optional tolerance As Double = 0.001)
 
     if depth > pLayerDepth(UBound(pLayerDepth)) Then
         Exit Sub
